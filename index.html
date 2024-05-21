@@ -16,10 +16,6 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico">
     <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
     <link rel="canonical" href="https://www.emaarindiaprojects.com/">
-    <link rel="preload" href="assets/fonts/cinzel-v10-latin-600.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/inter-v2-latin-100.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/inter-v2-latin-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/inter-v2-latin-700.woff2" as="font" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -36,12 +32,38 @@
             <div class="main-logo"> <a href="https://realtyshopee.com"><img
             src="assets/images/logo.webp" alt="Emaar Digi homes"></a> </div>
 
-            <div class="justify-content-center nav topnav " >
+            <div class="justify-content-center nav topnav navigators" >
                 <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#overview">Overview</a>
+                <a class="nav-link" href="#amenities">Amenties</a>
                 <a class="nav-link" href="#gallery">Gallery</a>
                 <a class="nav-link" href="#floorplans">Floor Plans</a>
+                <a class="nav-link" href="#price">Pricing</a>
             </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const navLinks = document.querySelectorAll('.topnav .nav-link');
+            
+                    navLinks.forEach(link => {
+                        link.addEventListener('click', function(event) {
+                            event.preventDefault();
+            
+                            const targetId = this.getAttribute('href').substring(1);
+            
+                            const targetSection = document.getElementById(targetId);
+            
+                            if (targetSection) {
+                                const targetOffset = targetSection.offsetTop -50;
+                                window.scrollTo({
+                                    top: targetOffset,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        });
+                    });
+                });
+            </script>
+            
             <ul class="nav topnav justify-content-end">
                 <li class="nav-item">
                     <div class="right">
@@ -84,6 +106,9 @@
             </div>
         </div>
     </div>
+
+   
+
     <div id="overview" class="textcontainer">
         <div class="text-justify data-first">
             <h2 class="title gold text-center">Emaar Digi homes - New Residential Projects in Sector 62 Gurgaon</h2>
@@ -108,6 +133,74 @@
             <div class="col-lg-6"><img class="max_wh" loading="lazy" src="assets/images/gallery/main-highlights.webp" alt="Emaar Digi homes Highlights"></div>
         </div>
     </div>
+    
+    <div id="amenities" class="amenities-div">
+        <p style="opacity: 0; position: absolute; left: -9999px;">
+            Emaar Digi Homes in Sector 62, Realty Shopee is a best company that will deal for you to get best offers , Gurgaon is a premier residential project offering luxury apartments with state-of-the-art amenities. Experience the finest living with 3BHK and 4BHK flats that are designed with modern architecture and intelligent home automation. Emaar India brings you the best in class residential properties with seamless connectivity to major hubs like MG Road, Cyber Hub, and the International Airport. Invest in Emaar Digi Homes for an elevated lifestyle in the heart of Gurgaon.
+        </p>
+        
+        <h3>DIGIHOMES AMENITIES</h3>
+        <div class="row w-70">
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams1.png" class="pr-4" alt="Club House">
+              <span>Club House</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams7.png" class="pr-4" alt="Kids Play Area">
+              <span>Kids Play Area</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams5.png" class="pr-4" alt="Swimming Pool">
+              <span>Swimming Pool</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams6.png" alt="Gym" class="pr-4">
+              <span>Gym</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams4.png" class="pr-4" alt="Home Theatre">
+              <span>Home Theatre</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/apartment.png" class="pr-4" alt="Malls">
+              <span>Malls</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/apartment.png" class="pr-4" alt="Open Space">
+              <span>Open Space</span>
+            </div>
+
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/wellness.png" class="pr-4" alt="High-Speed Wifi">
+              <span>High-Speed Wifi</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams10.png" class="pr-4" alt="24 Hour Water Supply">
+              <span>24 Hour Water Supply</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams12.png" class="pr-4" alt="Car Parking">
+              <span>Car Parking</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams2.png" class="pr-4" alt="Jogging Track">
+              <span>Jogging Track</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams3.png" class="pr-4" alt="Tennis Court">
+              <span>Tennis Court</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams11.png" class="pr-4" alt="Intercom">
+              <span>Intercom</span>
+            </div>
+            <div class="col-5 pt-3 pb-3 hd1">
+              <img src="images/icons/ams9.png" class="pr-4" alt="Park">
+              <span>Park</span>
+            </div>
+          </div>
+    </div>
+
     <div id="gallery" class="text-justify lightgallery">
         <h4 class="title text-center gold"><strong>Emaar Digi homes Gallery</strong></h4>
         <div class="slider-gallery slider">

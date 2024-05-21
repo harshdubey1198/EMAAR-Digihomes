@@ -387,7 +387,15 @@ p {
 .col-2x {
     width: 20% !important
 }
-
+.col-2{
+    flex: 0 0 12.666667% !important;
+}
+.w-70{
+    width: 85%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+}
 .col-1x {
     width: 10% !important
 }
@@ -396,7 +404,14 @@ p {
     width: auto;
     margin-right: 15px
 }
-
+.hd1{
+    background:#f2fdffbd;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-left: 15% !important;
+}
 .col-33,
 .col-3x {
     width: 33%
@@ -593,7 +608,52 @@ ul.breadcrumb li a:hover {
 .pnavigation .nav-item {
     padding: 10px
 }
+/* amenties css */
+.amenities-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 2px solid black;
+    /* min-height: 90vh; */
+    padding-top: 40px !important;
+    padding: 20px;
+    .block-area{
+        border: 1px solid red;
+    }
+    h3{
+        margin-bottom: 30px;
+    }
+}
 
+.topheader{
+    cursor: pointer;
+}
+
+.main-logo{
+    margin-left: 20px;
+}
+
+@media (width<951px){
+    .navigators{
+        display: none;
+    }
+    .con-number{
+        font-size: 1.2rem !important;
+        margin-left: 5px;
+    }
+    .col-5{
+        width: 120px !important;
+    }
+    .w-70{
+        width: 100% !important;
+    }
+    .hd1{
+        padding-left: 0 !important  ;
+    }
+}
 .pnavigation .nav-item .nav-link {
     font-size: .75em;
     line-height: 24px !important;
@@ -1519,7 +1579,7 @@ select.error:focus,
     }
     .topheader .main-logo {
         float: left;
-        padding: 0px 0px;
+        padding: 0px 12px;
     }
     .topheader .main-logo img {
         height: 50px;
@@ -1529,7 +1589,7 @@ select.error:focus,
     }
     .topheader .topnav .nav-item {
         line-height: 24px;
-        margin-top: -5px;
+        margin-top: 0px;
     }
     .mright {
         float: left;
@@ -1742,13 +1802,6 @@ select.error:focus,
     font-display: swap;
     font-weight: 600;
     src: url('fonts/cinzel-v10-latin-600.eot');
-    /* IE9 Compat Modes */
-    src: local(''), url('fonts/cinzel-v10-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/cinzel-v10-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-    url('fonts/cinzel-v10-latin-600.woff') format('woff'), /* Modern Browsers */
-    url('fonts/cinzel-v10-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('fonts/cinzel-v10-latin-600.svg#Cinzel') format('svg');
-    /* Legacy iOS */
 }
 
 /* inter-100 - latin */
@@ -1759,13 +1812,7 @@ select.error:focus,
     font-display: swap;
     font-weight: 100;
     src: url('fonts/inter-v2-latin-100.eot');
-    /* IE9 Compat Modes */
-    src: local(''), url('fonts/inter-v2-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/inter-v2-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
-    url('fonts/inter-v2-latin-100.woff') format('woff'), /* Modern Browsers */
-    url('fonts/inter-v2-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('fonts/inter-v2-latin-100.svg#Inter') format('svg');
-    /* Legacy iOS */
+   
 }
 
 /* inter-regular - latin */
@@ -1776,13 +1823,7 @@ select.error:focus,
     font-display: swap;
     font-weight: 400;
     src: url('fonts/inter-v2-latin-regular.eot');
-    /* IE9 Compat Modes */
-    src: local(''), url('fonts/inter-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/inter-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('fonts/inter-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
-    url('fonts/inter-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('fonts/inter-v2-latin-regular.svg#Inter') format('svg');
-    /* Legacy iOS */
+   
 }
 
 /* inter-700 - latin */
@@ -1793,24 +1834,11 @@ select.error:focus,
     font-display: swap;
     font-weight: 700;
     src: url('fonts/inter-v2-latin-700.eot');
-    /* IE9 Compat Modes */
-    src: local(''), url('fonts/inter-v2-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/inter-v2-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-    url('fonts/inter-v2-latin-700.woff') format('woff'), /* Modern Browsers */
-    url('fonts/inter-v2-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('fonts/inter-v2-latin-700.svg#Inter') format('svg');
-    /* Legacy iOS */
+    
 }
 
 /* icons */
 
-@font-face {
-    font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?cr46ys');
-    src: url('fonts/icomoon.eot?cr46ys#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?cr46ys') format('truetype'), url('fonts/icomoon.woff?cr46ys') format('woff'), url('fonts/icomoon.svg?cr46ys#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 [class^="icon-"],
 [class*=" icon-"] {
