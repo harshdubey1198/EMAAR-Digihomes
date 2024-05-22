@@ -37,8 +37,8 @@
                 <a class="nav-link" href="#overview">Overview</a>
                 <a class="nav-link" href="#amenities">Amenties</a>
                 <a class="nav-link" href="#gallery">Gallery</a>
-                <a class="nav-link" href="#floorplans">Floor Plans</a>
                 <a class="nav-link" href="#price">Pricing</a>
+                <a class="nav-link" href="#floorplans">Floor Plans</a>
             </div>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
@@ -251,8 +251,9 @@
                 <div class="col-lg-6">
                     <div class="pictures" data-src="assets/images/plans/location-map.webp"><img width="100%" src="assets/images/plans/location-map.webp" alt="Emaar Digi homes Location Map"></div>
                 </div>
-                <div class="col-lg-6">
-                    <h6 class="h4">Leading Connectivity</h6>
+                <div class="col-lg-6 centralised">
+                    <h6 class="h4 typewriter">Leading Connectivity</h6>
+                    <hr>
                     <ul class="list">
                         <li>Prime location in Sector 62, Gurgaon</li>
                         <li>Only 20 minutes away from MG Road and major shopping malls.</li>
@@ -260,6 +261,11 @@
                         <li>Conveniently located 45 minutes away from the International Airport (T3).</li>
                         <li>Excellent connectivity to schools, hospitals, and other essential facilities.</li>
                         <li>Just 15 minutes away from Sector 55-56 Rapid Metro.</li>
+                        <li>Proximity to Golf Course Extension Road, offering seamless access to various commercial and residential hubs.</li>
+                        <li>Located near major business parks and IT hubs, making it ideal for professionals.</li>
+                        <li>Easy access to the Delhi-Gurgaon Expressway, ensuring quick travel to Delhi and other parts of NCR.</li>
+                        <li>Close to renowned educational institutions like The Shri Ram School and Delhi Public School.</li>
+                        <li>Near prominent healthcare facilities like Artemis Hospital and Fortis Memorial Research Institute.</li>
                     </ul>
                 </div>
             </div>
@@ -286,11 +292,12 @@
         <div class="nopad">
             <h6 class="white"> Follow Us:</h6>
             <div class="social-icon">
-                <span class="pad-icon">  <a href="https://www.facebook.com/realtyshopee/"      target="_blank" >        <img src="assets/icon/facebook.svg"      alt="Emaar Digi homes" width="40"></a></span>
-                <span class="pad-icon">  <a href="https://x.com/Sachin_Gupta_11"               target="_blank" >        <img src="assets/icon/twitter.svg"       alt="Emaar Digi homes" width="40"></a></span>
-                <span class="pad-icon">  <a href="https://www.youtube.com/@realtyshopee861"    target="_blank" >        <img src="assets/icon/youtube.svg"       alt="Emaar Digi homes" width="40"></a></span>
-                <span class="pad-icon">  <a href="https://www.instagram.com/realtyshopee54321" target="_blank" >        <img src="assets/icon/instagram.svg"     alt="Emaar Digi homes" width="40"></a></span>
-                <span class="pad-icon">  <a href="https:/wa.me/+919289252999"                  target="_blank" >        <img src="assets/icon/whatsapp.svg"      alt="Emaar Digi homes" width="40"></a></span>
+                <span class="pad-icon">  <a href="https://www.facebook.com/realtyshopee/"       target="_blank" >        <img src="assets/icon/facebook.svg"      alt="Emaar Digi homes" width="40"></a></span>
+                <span class="pad-icon">  <a href="https://x.com/Sachin_Gupta_11"                target="_blank" >        <img src="assets/icon/twitter.svg"       alt="Emaar Digi homes" width="40"></a></span>
+                <span class="pad-icon">  <a href="https://www.youtube.com/@realtyshopee861"     target="_blank" >        <img src="assets/icon/youtube.svg"       alt="Emaar Digi homes" width="40"></a></span>
+                <span class="pad-icon">  <a href="https://www.instagram.com/realtyshopee54321"  target="_blank" >        <img src="assets/icon/instagram.svg"     alt="Emaar Digi homes" width="40"></a></span>
+                <span class="pad-icon">  <a href="https://wa.me/+919289252999"                   target="_blank" >        <img src="assets/icon/whatsapp.svg"      alt="Emaar Digi homes" width="40"></a></span>
+                <span class="pad-icon">  <a href="https://www.realtyshopee.com"                  target="_blank" >        <img src="assets/icon/internet.svg"      alt="Emaar Digi homes" width="40"></a></span>
             </div>
         </div>
         <div class="col-sm-6 nopad">
@@ -304,23 +311,79 @@
         <div class="enquire-button bg-green shake white calign"><img src="assets/icon/envelope.png" alt="X" width="25" class="center"></div>
         <span class="closeit white"><i class="bi bi-x-lg"></i></span>
         <div class="formtitle white calign">Get Instant Callback</div>
-        <form name="callback" id="quichForm" method="post" action="form.php">
-            <div class="form-section2 left"> <i class="fa fa-regular fa-user white"></i>
+        <form name="callback" id="quichForm" method="post">
+            <div class="form-section2 left">
+                <i class="fa fa-regular fa-user white"></i>
                 <input name="name" type="text" placeholder="Your Name" class="inputxt" required>
             </div>
-            <div class="form-section2 left"> <i class="fa fa-phone white" aria-hidden="true"></i>
+            <div class="form-section2 left"> 
+                <i class="fa fa-phone white" aria-hidden="true"></i>
                 <input name="mobile" type="tel" pattern="[789][0-9]{9}" placeholder="Mobile No" class="inputxt" required>
             </div>
-            <div class="form-section2 left"><i class="fa white fa-regular fa-envelope"></i>
+            <div class="form-section2 left">
+                <i class="fa white fa-regular fa-envelope"></i>
                 <input name="email" type="email" placeholder="Your Email Id" class="inputxt" required>
             </div>
-            <input name="email" id="email" type="hidden" value="Sachin@realtyshopee.com">
-            <input name="project" type="hidden" value="Emaar Digi Homes">
+            
+            <div class="form-section2 left">
+                <i class="fa white fa-map-marker" aria-hidden="true"></i>
+                <input name="when_can_you_plan_a_visit" type="text" placeholder="Schedule A Visit" class="inputxt">
+            </div>
             <div class="form-section2 left">
                 <input id="send" type="submit" value="Submit" name="send" class="btn-submit">
             </div>
         </form>
     </div>
+    <script>
+        document.getElementById('quichForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            // Gather form data
+            const formData = new FormData(this);
+    
+            // Construct an object with form data
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+    
+            // Disable the submit button to prevent multiple submissions
+            document.getElementById('send').disabled = true;
+    
+            // Send data to the API using fetch
+            fetch('http://localhost:10/Emaar-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                // Display success message or handle success
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Display error message or handle error
+            })
+            .finally(() => {
+                // Re-enable the submit button after the request is completed
+                document.getElementById('send').disabled = false;
+            });
+    
+            // Remove the event listener to prevent further submissions
+            this.removeEventListener('submit', arguments.callee);
+        });
+    </script>
+    
+    
+    
     <link href="assets/lightgallery.css" rel="stylesheet">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js" crossorigin="anonymous"></script>

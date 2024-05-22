@@ -712,7 +712,7 @@ a.nav-link{
 }
 
 .pcontent {
-    padding: 50px !important
+    padding: 40px !important
 }
 
 .pcontent p {
@@ -949,6 +949,55 @@ a.nav-link{
     
 }
 
+.centralised{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+hr{
+    width: 100%;
+    border: 1px solid rgba(190, 229, 255, 0.781);
+    margin: 0;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typewriter {
+    display: inline-block;  
+    overflow: hidden;  
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 0.15em; 
+    animation: typing 6s steps(40, end) infinite, blink 0.75s step-end infinite; 
+    border-right: 0.1em solid black;  
+}    
+
+.h4 {
+    text-align: center;  
+    font-size: 1.5em;  
+}
+
+  
 
 /* Image Gallery */
 
